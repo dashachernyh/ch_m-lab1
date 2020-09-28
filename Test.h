@@ -77,6 +77,10 @@ double** RK4_test2(double** kor_pr, double h, int n, double e)
 
 		//локальная погрешность En+1
 		kor_pr[i][5] = s * pow(2, p);
+		
 	}
+	kor_pr[0][2] = c1;
+	kor_pr[0][3] = c2;
 	return kor_pr;
 }
+
